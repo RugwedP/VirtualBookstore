@@ -1,0 +1,14 @@
+#addBookContainer2
+{
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 80px; */
+  margin-top: 100px;
+}
+
+#addBookContainer2 h3
+{
+    color: #2874f0;
+}

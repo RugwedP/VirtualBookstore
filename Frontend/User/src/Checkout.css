@@ -1,0 +1,467 @@
+
+
+#cart-container {
+  max-width: 750px;
+  margin: 0 auto;
+  /* padding: 10px; */
+  /* font-family: Arial, sans-serif; */
+  /* margin-top: 40px; */
+  /* background-color: white; */
+  font-weight: 100;
+  font-size:small;
+}
+ 
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+#cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: white; */
+}
+
+#cart-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  /* border-radius: 8px; */
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+  background-color: white;
+
+}
+
+.cart-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 150px;
+  /* border-radius: 8px; */
+  object-fit: cover;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cart-item-image:hover {
+  transform: scale(1.05);
+}
+
+#cart-item-details {
+  flex-grow: 1;
+}
+
+#cart-item h4 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+#cart-item p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #666;
+}
+
+#cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#cart-item-quantity button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#cart-item-quantity button:hover {
+  background-color: #0056b3;
+}
+
+#cart-item-quantity input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+.cart-summary {
+  text-align: right;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  position: sticky;
+  bottom: 0; /* Sticks to the bottom of its container */
+}
+
+#mycart-summary
+{
+  text-align: right;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  position: sticky;
+  bottom: 0; 
+  max-width: 750px;
+ 
+
+
+  
+}
+
+.cart-summary h3 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+#mycart-summary h3 {
+  /* font-size: 1.5em; */
+  color: #333;
+  font-size: large;
+}
+
+.checkout-button {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: sticky;
+}
+#myCheckout-button
+{
+  padding: 12px 24px;
+  background-color: #ff9f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: sticky;
+}
+
+.checkout-button:hover {
+  background-color: #218838;
+}
+
+#notCategoryFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#cartImage {
+  background-color: #f5f6fa;
+  width: 250px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  animation: fadeIn 1s ease-in-out;
+  mix-blend-mode: multiply;
+}
+
+#cartNotFound {
+  font-size: 1.3em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.shop-now-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.shop-now-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Animation for empty cart message */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#addressContainer {
+  margin-top: 95px;
+  background-color: white;
+  padding: 10px;
+  height: auto; /* Allows height to adjust automatically based on content */
+  width: 90%; /* Use a percentage to make it responsive */
+  max-width: 750px; /* Limits the maximum width on larger screens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  /* border-radius: 8px;  */
+  position: sticky;
+  z-index: 10;
+  top: 0px; 
+}
+
+.changeButton {
+  color: #2874f0;
+  height: 40px;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid gray;
+  
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #addressContainer {
+    flex-direction: column; /* Stacks address and button vertically */
+    align-items: flex-start; /* Aligns items to the start */
+    height: auto; /* Adjusts height based on content */
+  }
+  
+  .changeButton {
+    margin-top: 10px; /* Adds space between address and button when stacked */
+    align-self: flex-end; /* Optional: aligns button to the right */
+  }
+}
+/* Loader styling */
+.custom-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Light overlay */
+  z-index: 9999; /* Above other content */
+}
+
+.loader-circle {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #2874f0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.namePin
+{
+  font-weight:600;
+}
+.userAddress
+{
+  /* padding-top: 5px; */
+    font-size:small;
+    color: gray;
+}
+
+
+.userName-phoneNum
+{
+    display: flex;
+    justify-content: center;
+}
+
+#myUsername
+{
+
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.phone
+{
+    margin-left: 10px;
+}
+#loginTitle
+{
+    color: gray;
+    font-weight: 500;
+}
+#changeButton {
+    color: #2874f0;
+    height: 40px;
+    padding: 0 10px;
+    background-color: white;
+    border: 1px solid gray;
+    
+    
+  }
+
+ 
+  #addressContainer2 {
+    margin-top:15px;
+    background-color: white;
+    padding: 10px;
+    height: auto; /* Allows height to adjust automatically based on content */
+    width: 90%; /* Use a percentage to make it responsive */
+    max-width: 750px; /* Limits the maximum width on larger screens */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    /* border-radius: 8px;  */
+    position: sticky;
+    z-index: 10;
+    top: 0px; 
+  }
+
+  #addressContainer3 {
+    margin-top:15px;
+    
+    background-color:#2874f0;
+    padding: 10px;
+    height: auto; /* Allows height to adjust automatically based on content */
+    width: 90%; /* Use a percentage to make it responsive */
+    max-width: 750px; /* Limits the maximum width on larger screens */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    /* border-radius: 8px;  */
+    position: sticky;
+    z-index: 10;
+    top: 0px; 
+  }
+ #orderSummany h5
+ {
+    color: white;
+ }
+
+ #addressContainer5 {
+  margin-top: 15px;
+  background-color: white;
+  padding: 10px;
+  height: auto; /* Allows height to adjust automatically based on content */
+  width: 90%; /* Use a percentage to make it responsive */
+  max-width: 750px; /* Limits the maximum width on larger screens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  /* border-radius: 8px;  */
+  position: sticky;
+  z-index: 10;
+  top: 0px; 
+}
+  .summaryContainer {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+
+
+#mycart-summary {
+  text-align: right;
+  margin-top: 20px; /* Provides spacing between containers */
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+#myCheckout-button {
+  padding: 12px 24px;
+  background-color: #ff9f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#noOrderSummaryFound
+{
+  /* width: 750px;
+  background-color: white;
+  height: 50px; */
+
+  /* margin-top: 15px; */
+  background-color: white;
+  padding: 10px;
+  height: auto; /* Allows height to adjust automatically based on content */
+  width: 90%; /* Use a percentage to make it responsive */
+  max-width: 750px; /* Limits the maximum width on larger screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  /* border-radius: 8px;  */
+  position: sticky;
+  z-index: 10;
+  top: 0px; 
+  
+}
+#addressContainer6
+{
+  margin-top: 15px;
+  background-color: white;
+  padding: 10px;
+  height: auto; /* Allows height to adjust automatically based on content */
+  width: 90%; /* Use a percentage to make it responsive */
+  max-width: 750px; /* Limits the maximum width on larger screens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  /* border-radius: 8px;  */
+  position: sticky;
+  z-index: 10;
+  top: 0px; 
+}

@@ -1,0 +1,21 @@
+
+
+.myDiv{
+    
+    margin-top: 100px;
+    background-color: white;
+
+}
+.search-results-container
+{
+    margin-left: 50px;
+}
+.searchResult
+{
+    
+    padding-bottom: 20px;
+}
+.no-books-message{
+    margin-top: 100px;
+    text-align: center;
+}

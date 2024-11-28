@@ -1,0 +1,214 @@
+.orderedBooks
+{
+    margin-top: 100px;
+    
+}
+.ordernotfound
+{
+    margin-top: 100px;
+    width: 400px;
+}
+.orderNotFoundImage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.order-card {
+    width: 800px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.order-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-image {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.order-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order-info h3 {
+    font-size: 1.1em;
+    padding-top: 0;
+    margin: 0;
+    color: #333;
+}
+
+/* .order-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} */
+
+.order-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spreads items within the container */
+    gap: 20px;
+}
+.expected-delivery {
+    flex: 1; /* Expands the section to take available space */
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+.order-price p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.cancel-button {
+    padding: 8px 12px;
+    /* background-color: #ff4d4f; */
+    color: #2874f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+    margin-left: auto; /* Aligns button to the right */
+}
+
+    /* .cancel-button:hover {
+        background-color: #e04143;
+    } */
+
+.order-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.order-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.order-not-found-image {
+    width: 300px;
+    height: auto;
+}
+
+.order-not-found p {
+    font-size: 1.2em;
+    color: #999;
+}
+#expectedDate
+{
+    text-align: center;
+}
+
+.order-content h3 {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .order-card {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .order-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-image {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .order-price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .expected-delivery {
+        text-align: left;
+    }
+
+    .cancel-button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-card {
+        width: 100%;
+    }
+
+    .order-info h3 {
+        font-size: 1em;
+    }
+
+    .order-not-found-image {
+        max-width: 200px;
+    }
+
+    .order-price p, 
+    .expected-delivery, 
+    .order-bottom {
+        font-size: 0.85em;
+    }
+
+    .cancel-button {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+}
+.orderPending
+{
+    color: rgb(225, 225, 50);
+    font-weight: 700;
+}
+.orderConfirm
+{
+    color: green;
+    font-weight: 700;
+}
+.ordeReject
+{
+    color: red;
+    font-weight: 700;
+}

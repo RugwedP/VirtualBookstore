@@ -1,0 +1,138 @@
+.navbar {
+  width: 100%;
+  background-color: #2874f0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem; /* Reduced height */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+/* Logo or Brand */
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto; /* Push the brand to the left */
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  justify-content: center; /* Center the search box */
+  align-items: center;
+  margin: 0 10px; /* Space between elements */
+  flex-grow: 1; /* Allow search box to grow */
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px; /* Limit size */
+  padding: 0.4rem 0.8rem; /* Adjusted for smaller height */
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.9rem;
+  height: 40px;
+}
+
+.search-button {
+  padding: 0.4rem 0.8rem; /* Reduced padding */
+  background-color: white;
+  color: rgb(22, 157, 202);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.search-button:hover {
+  background-color: black;
+  color: #2874f0;
+}
+
+/* Hamburger Toggle Button */
+/* Hamburger Toggle Button */
+#hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+.sidebar-close
+{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 180px; 
+  /* text-align: end; */
+}
+
+/* Sidebar and Navbar Adjustments */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #2874f0;
+  color: white;
+  transition: left 0.3s ease;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0; /* Visible when open */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar ul li:hover {
+  background-color: #1a5fb4;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-form {
+    justify-content: center;
+    width: 100%; /* Full width on small screens */
+  }
+}

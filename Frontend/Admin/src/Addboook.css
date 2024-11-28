@@ -1,0 +1,94 @@
+
+  
+  .container {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+  }
+  
+  input.form-control {
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  #myMessage
+  {
+   text-align: center;
+  }
+  #heading
+  {
+    text-align: center;
+  }
+
+  #addBookContainer
+  {
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+  }
+  .myButtons
+  {
+    display: flex;
+    
+    justify-content: center;
+  }
+  #homeButton
+  {
+    margin-left: 10px;
+  }
+
+  .container {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    width: 80%; /* Adjust the width to your preference */
+    max-width: 700px; /* Optionally limit the maximum width */
+    margin-left: auto;  /* Center the form */
+    margin-right: auto; /* Center the form */
+  }
+  
+  #addBookContainer {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Padding inside the container */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+  }
+  
+  input.form-control {
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .myButtons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #homeButton {
+    margin-left: 10px;
+  }
+  

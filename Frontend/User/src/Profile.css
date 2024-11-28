@@ -1,0 +1,118 @@
+.personal-details {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px; /* Limits max width to 500px */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin:  auto;
+    margin-top: 100px;
+}
+
+.personal-details h2 {
+    color: #2874f0;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Adjust focus style for input fields */
+.form-control:focus {
+    border-color: #87b2d8;
+    box-shadow: 0 0 5px rgba(135, 178, 216, 0.4);
+}
+
+.personal-details button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.personal-details button:hover {
+    background-color: #357ab8;
+}
+
+.login-link {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #4a90e2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .personal-details {
+        padding: 20px;
+    }
+
+    .personal-details h2 {
+        font-size: 24px;
+    }
+
+    .form-control,
+    .personal-details button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .personal-details {
+        padding: 15px;
+    }
+
+    .personal-details h2 {
+        font-size: 22px;
+    }
+
+    .form-control,
+    .personal-details button {
+        font-size: 14px;
+    }
+}
+.personal-details label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds space between buttons */
+    margin-top: 20px;
+}
+
+.personal-details button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    width: 48%; /* Adjusts button width for inline alignment */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.personal-details button:hover {
+    background-color: #357ab8;
+}
